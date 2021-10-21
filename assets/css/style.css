@@ -47,6 +47,7 @@ Banner Layers
     transform-style: preserve-3d; 
     transform: translateZ(0px);
     transition: 0.7s;
+    z-index: 4;
 }
 
 

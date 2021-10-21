@@ -12,7 +12,8 @@
 
 body {
     background: #ffffff;
-    background: #131313;
+    background: #3f0000;
+    background-image: linear-gradient(to right, #250000, #500000);
 }
 
 .banner-container {
@@ -33,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 20px rgb(37, 0, 0);
 }
 
 
@@ -179,7 +181,7 @@ Banner Layers
 /* Image */
 .banner:hover .banner__layer-25 {
     transform-style: preserve-3d; 
-    transform: translateZ(200px);
+    transform: translateZ(220px);
 }
 /* logo */
 .banner:hover .banner__layer-26 {
@@ -195,9 +197,10 @@ Banner Layers
     font-weight: 300;
     font-size: 14px;
     font-style: italic;
-    color: #333;
+    color: #ffffff;
     text-align: center;
-    margin-top: -50px;
+    /* margin-top: -50px; */
+    opacity: 0.4;
 }
 
 @media (max-width: 900px) {
@@ -206,20 +209,28 @@ Banner Layers
     }
 
     .banner__title-1 {
-        font-size: ;
+        font-size: 218px;
+        top: 22.5%;
+        left: 21%;
+        letter-spacing: 5px;
     }
-}
+
+    .banner__title-2 {
+        font-size: 103px;
+        top: 62%;
+        left: 20%;
+    }
 
 @media (max-width: 768px) {
     .banner__title-1 {
-        font-size: 183px;
-        top: 16.5%;
+        font-size: 185px;
+        top: 30%;
         left: 22%;
         letter-spacing: 5px;
     }
     .banner__title-2 {
-        font-size: 93px;
-        top: 62%;
+        font-size: 85px;
+        top: 64%;
         left: 22%;
     }
 }
@@ -227,13 +238,27 @@ Banner Layers
 @media (max-width: 445px) {
     .banner__title-1 {
         font-size: 106px;
-        top: 9.5%;
+        top: 38.5%;
         left: 23%;
         letter-spacing: 2px;
     }
     .banner__title-2 {
         font-size: 49px;
-        top: 28.5%;
+        top: 57.5%;
+        left: 23%;
+    }
+}
+
+@media (max-width: 360px) {
+    .banner__title-1 {
+        font-size: 84px;
+        top: 40.5%;
+        left: 23%;
+        letter-spacing: 2px;
+    }
+    .banner__title-2 {
+        font-size: 38px;
+        top: 56.5%;
         left: 23%;
     }
 }

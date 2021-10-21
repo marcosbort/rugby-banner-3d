@@ -30,6 +30,9 @@ body {
     height: 506px;
     transform-style: preserve-3d;
     font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner__layer {
@@ -145,11 +148,6 @@ body {
 .banner:hover .banner__layer-17 {
     transform-style: preserve-3d; 
     transform: translateZ(80px);
-}
-/* entry open */
-.banner:hover .banner__layer-18 {
-    transform-style: preserve-3d; 
-    transform: translateZ(60px);
 }
 /* 27 July */
 .banner:hover .banner__layer-19 {

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*-----------------------------------------------------------------------------/
+    General
+/-----------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    background: #131313;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.banner {
+    position: relative;
+    /* width: 1000px;
+    height: 562px; */
+    width: 900px;
+    height: 506px;
+    transform-style: preserve-3d;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.banner__layer {
+    position: absolute;
+    width: 100%;
+    transform-style: preserve-3d; 
+    transform: translateZ(0px);
+    transition: 0.7s;
+}
+
+/*-----------------------------------------------------------------------------/
+    Banner Text
+/-----------------------------------------------------------------------------*/
+.banner__title-1 {
+	position: absolute;
+	color: #951313;
+	text-transform: uppercase;
+	font-size: 229px;
+	top: 22%;
+	left: 21%;
+	z-index: 1;
+	transition: 0.7s;
+	letter-spacing: 12px;
+    opacity: 0.8;
+}
+
+.banner__title-2 {
+	position: absolute;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 113px;
+	top: 62%;
+	left: 20%;
+	z-index: 1;
+	transition: 0.7s;
+	letter-spacing: 0px;
+    opacity: 0.8;
+}
+
+/*-----------------------------------------------------------------------------/
+    Banner Layers
+/-----------------------------------------------------------------------------*/
+.banner__layer-25 {
+    z-index: 10;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------/
+    Hover
+/-----------------------------------------------------------------------------*/
+
+.banner:hover .banner__layer-00 {
+    transform-style: preserve-3d; 
+    transform: translateZ(0px);
+}
+.banner:hover .banner__layer-01 {
+    transform-style: preserve-3d; 
+    transform: translateZ(40px);
+}
+.banner:hover .banner__layer-02 {
+    transform-style: preserve-3d; 
+    transform: translateZ(60px);
+}
+.banner:hover .banner__layer-03 {
+    transform-style: preserve-3d; 
+    transform: translateZ(80px);
+}
+.banner:hover .banner__layer-04 {
+    transform-style: preserve-3d; 
+    transform: translateZ(100px);
+}
+/* Red Right */
+.banner:hover .banner__layer-06 {
+    transform-style: preserve-3d; 
+    transform: translateZ(30px);
+}
+/* Red Left */
+.banner:hover .banner__layer-08 {
+    transform-style: preserve-3d; 
+    transform: translateZ(30px);
+}
+.banner:hover .banner__layer-09 {
+    transform-style: preserve-3d; 
+    transform: translateZ(60px);
+}
+.banner:hover .banner__layer-10 {
+    transform-style: preserve-3d; 
+    transform: translateZ(60px);
+}
+.banner:hover .banner__layer-11 {
+    transform-style: preserve-3d; 
+    transform: translateZ(300px);
+}
+.banner:hover .banner__layer-12 {
+    transform-style: preserve-3d; 
+    transform: translateZ(50px);
+}
+.banner:hover .banner__layer-13 {
+    transform-style: preserve-3d; 
+    transform: translateZ(220px);
+}
+.banner:hover .banner__layer-14 {
+    transform-style: preserve-3d; 
+    transform: translateZ(40px);
+}
+.banner:hover .banner__layer-15 {
+    transform-style: preserve-3d; 
+    transform: translateZ(100px);
+}
+/* website */
+.banner:hover .banner__layer-17 {
+    transform-style: preserve-3d; 
+    transform: translateZ(80px);
+}
+/* entry open */
+.banner:hover .banner__layer-18 {
+    transform-style: preserve-3d; 
+    transform: translateZ(60px);
+}
+/* 27 July */
+.banner:hover .banner__layer-19 {
+    transform-style: preserve-3d; 
+    transform: translateZ(120px);
+}
+/* Sunday */
+.banner:hover .banner__layer-20 {
+    transform-style: preserve-3d; 
+    transform: translateZ(80px);
+}
+/* Now */
+.banner:hover .banner__layer-21 {
+    transform-style: preserve-3d; 
+    transform: translateZ(100px);
+}
+/* Join */
+.banner:hover .banner__layer-22 {
+    transform-style: preserve-3d; 
+    transform: translateZ(80px);
+}
+/* Championship */
+.banner:hover .banner__title-2 {
+    transform-style: preserve-3d; 
+    transform: translateZ(120px);
+}
+/* Rugby */
+.banner:hover .banner__title-1 {
+    transform-style: preserve-3d; 
+    transform: translateZ(60px);
+}
+/* Image */
+.banner:hover .banner__layer-25 {
+    transform-style: preserve-3d; 
+    transform: translateZ(200px);
+}
+/* logo */
+.banner:hover .banner__layer-26 {
+    transform-style: preserve-3d; 
+    transform: translateZ(160px);
+}
+
+
+
+
+.footer {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    margin-top: -50px;
+}
+
+@media (max-width: 900px) {
+    .banner {
+        width: 90%;
+    }
+
+    .banner__title-1 {
+        font-size: ;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner__title-1 {
+        font-size: 183px;
+        top: 16.5%;
+        left: 22%;
+        letter-spacing: 5px;
+    }
+    .banner__title-2 {
+        font-size: 93px;
+        top: 62%;
+        left: 22%;
+    }
+}
+
+@media (max-width: 445px) {
+    .banner__title-1 {
+        font-size: 106px;
+        top: 9.5%;
+        left: 23%;
+        letter-spacing: 2px;
+    }
+    .banner__title-2 {
+        font-size: 49px;
+        top: 28.5%;
+        left: 23%;
+    }
+}

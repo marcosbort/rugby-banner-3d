@@ -35,6 +35,10 @@ body {
     align-items: center;
 }
 
+
+/*-----------------------------------------------------------------------------/
+Banner Layers
+/-----------------------------------------------------------------------------*/
 .banner__layer {
     position: absolute;
     width: 100%;
@@ -43,43 +47,36 @@ body {
     transition: 0.7s;
 }
 
-/*-----------------------------------------------------------------------------/
-    Banner Text
-/-----------------------------------------------------------------------------*/
+
 .banner__title-1 {
-	position: absolute;
-	color: #951313;
-	text-transform: uppercase;
-	font-size: 229px;
-	top: 22%;
-	left: 21%;
-	z-index: 1;
-	transition: 0.7s;
-	letter-spacing: 12px;
+    position: absolute;
+    color: #951313;
+    text-transform: uppercase;
+    font-size: 229px;
+    top: 22%;
+    left: 21%;
+    z-index: 1;
+    transition: 0.7s;
+    letter-spacing: 12px;
     opacity: 0.8;
 }
 
 .banner__title-2 {
-	position: absolute;
-	color: #ffffff;
-	text-transform: uppercase;
-	font-size: 113px;
-	top: 62%;
-	left: 20%;
-	z-index: 1;
-	transition: 0.7s;
-	letter-spacing: 0px;
+    position: absolute;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 113px;
+    top: 62%;
+    left: 20%;
+    z-index: 1;
+    transition: 0.7s;
+    letter-spacing: 0px;
     opacity: 0.8;
 }
 
-/*-----------------------------------------------------------------------------/
-    Banner Layers
-/-----------------------------------------------------------------------------*/
 .banner__layer-25 {
     z-index: 10;
 }
-
-
 
 
 /*-----------------------------------------------------------------------------/

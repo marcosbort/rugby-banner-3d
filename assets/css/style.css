@@ -11,8 +11,6 @@
 }
 
 body {
-    background: #ffffff;
-    background: #3f0000;
     background-image: linear-gradient(to right, #250000, #500000);
 }
 
@@ -20,21 +18,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    width: 100vw;
+    height: 85vh;
 }
 
 .banner {
     position: relative;
     /* width: 1000px;
     height: 562px; */
-    width: 900px;
-    height: 506px;
+    /* width: 900px;
+    height: 506px; */
+    width: 800px;
+    height: 450px;
     transform-style: preserve-3d;
     font-family: 'Bebas Neue', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 20px rgb(37, 0, 0);
 }
 
 
@@ -50,31 +50,17 @@ Banner Layers
     z-index: 4;
 }
 
-
-.banner__title-1 {
-    position: absolute;
-    color: #951313;
-    text-transform: uppercase;
-    font-size: 229px;
-    top: 22%;
-    left: 21%;
-    z-index: 1;
-    transition: 0.7s;
-    letter-spacing: 12px;
-    opacity: 0.8;
+.banner__layer-00 {
+    box-shadow: 0px 0px 20px rgb(37, 0, 0);
 }
 
-.banner__title-2 {
-    position: absolute;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 113px;
-    top: 62%;
-    left: 20%;
-    z-index: 1;
-    transition: 0.7s;
-    letter-spacing: 0px;
-    opacity: 0.8;
+.banner__layer-06,
+.banner__layer-08 {
+    opacity: 0.5;
+}
+
+.banner__layer-24 {
+    opacity: 0.9;
 }
 
 .banner__layer-25 {
@@ -147,7 +133,7 @@ Banner Layers
 /* website */
 .banner:hover .banner__layer-17 {
     transform-style: preserve-3d; 
-    transform: translateZ(80px);
+    transform: translateZ(180px);
 }
 /* 27 July */
 .banner:hover .banner__layer-19 {
@@ -170,12 +156,12 @@ Banner Layers
     transform: translateZ(80px);
 }
 /* Championship */
-.banner:hover .banner__title-2 {
+.banner:hover .banner__layer-23 {
     transform-style: preserve-3d; 
     transform: translateZ(120px);
 }
 /* Rugby */
-.banner:hover .banner__title-1 {
+.banner:hover .banner__layer-24 {
     transform-style: preserve-3d; 
     transform: translateZ(60px);
 }
@@ -189,6 +175,10 @@ Banner Layers
     transform-style: preserve-3d; 
     transform: translateZ(160px);
 }
+.banner:hover .banner__layer-27 {
+    transform-style: preserve-3d; 
+    transform: translateZ(180px);
+}
 
 
 
@@ -200,13 +190,13 @@ Banner Layers
     font-style: italic;
     color: #ffffff;
     text-align: center;
-    /* margin-top: -50px; */
+    margin-top: 20px;
     opacity: 0.4;
 }
 
 @media (max-width: 900px) {
     .banner {
-        width: 90%;
+        /* width: 90%; */
     }
 
     .banner__title-1 {

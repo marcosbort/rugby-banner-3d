@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
 }
 
 .banner {
@@ -183,14 +183,17 @@ Banner Layers
 
 
 
-.footer {
+.title-top {
+    position: absolute;
+    translate: middle;
+    top: 10px;
+    width: 100%;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 14px;
     font-style: italic;
     color: #ffffff;
     text-align: center;
-    margin-top: 20px;
     opacity: 0.4;
 }
 
